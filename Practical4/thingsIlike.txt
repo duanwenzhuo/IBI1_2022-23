@@ -1,11 +1,13 @@
-a
-b
-c
-d
-e
-f
-g
-h
-i
-j
+i like tea
+i like basketball
+i like reading 
+i like food
+i like phone
+i like running
+i like talking
+i like swimming
+i like milk
+i like me
+
+
 
