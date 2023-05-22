@@ -1,15 +1,14 @@
+import matplotlib.pyplot as plt
+costs = [1,8,15,7,5,14,43,40]   
+sorted_costs = sorted(costs)   #store the costs
+print(sorted_costs)       #print the stored values
 
-costs = [1,8,15,7,5,14,43,40]   #store the costs
-print(costs)       #print the stored values
-import numpy as np
-import matplotlib.pyplot as plt       #import modules
-N = 8         #the number of olympic games
-costs = (1,8,15,7,5,14, 43, 40)    #costs for each olympic games
-ind = np.arange(N)       #the x location for each groups
-width = 0.1    #the width of bars
-p1 = plt.bar(ind, costs, width)          #creat the bar plot whit certain arguments: x(ind), height(costs) and width 
-plt.ylabel('costs')      # y label of the bar plot
-plt.xticks(ind, ('Los Angeles 1984', 'Seoul 1988', 'Barcelona 1992', 'Atlanta 1996', 'Sydney 2000', 'Athens 2003', 'Beijing 2008', 'London 2012'))
-plt.title('olympic costs') #title of the plot
-plt.yticks(np.arange(0,50,5))        #set the y-axis tick values with  an array of tick locations from 0 to 50 (exclusive) with a step of 5 between each value  
-plt.show()   #show the plot
+labels = ["Los Angeles 1984", "Atlanta 1996", "Sydney 2000", "Seoul 1988", "Athens 2003", "Barcelona 1992", "London 2012", "Beijing 2008"]
+
+# Plot the bar chart with a title and axis labels
+plt.bar(labels, sorted_costs, color="green")
+plt.title("Cost of hosting the Summer Olympic Games")
+plt.xlabel("City and year")
+plt.ylabel("Cost (billion US dollars)")
+plt.xticks(rotation=45) # Rotate the x-axis labels for better readability
+plt.show()

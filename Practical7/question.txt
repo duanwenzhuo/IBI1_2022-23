@@ -1,1 +1,3 @@
-  
+The question is: Which country had the highest number of new cases per million people on 14 February 2021?
+line number: 50-54
+Montenegro had the highest number of new cases per million people on 14 February 2021. This means that Montenegro had a very high rate of infection relative to its population size on that date

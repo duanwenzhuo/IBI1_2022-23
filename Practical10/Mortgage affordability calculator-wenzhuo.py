@@ -1,12 +1,15 @@
-def buy_house(value,salary) :
-    '''input: value, a postive int
-              salary, a postive int
-        returns yes if value is smaller than five times salary
+def buy_house(value, salary) :
+    '''input: value (int): The total value of the house
+              salary (int): The purchaser's annual salary.
+        Returns:
+    str: "Yes" if the value is smaller than five times the salary, "No" otherwise.
     '''
-    if value <= 5*salary:
-        print('yes')
+    # Compare the value and the salary
+    if value <= 5 * salary:
+        return "Yes"
     else:
-        print('no')
+        return "No"
 
 #example        
-buy_house(90900,10000)
+result = buy_house(90900,10000)
+print(result)

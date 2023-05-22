@@ -1,8 +1,17 @@
-mydict = {"Comedy" : 73, "Action" : 42, "Romance" : 38, "Fantasy" : 28, "Science-fiction" : 22, "Horror" : 19, "Crime" : 18, "Documentary" : 12, "History" : 8, "War" : 7}  #a dictionary containing the information
-print (mydict)
 import matplotlib.pyplot as plt
-import numpy as np          #import the
-labels = ['Comedy', 'Action', 'Romance', 'Fantasy', 'Science-fiction', 'Horror', 'Crime', 'Documentary', 'History', 'War']       #the name of movies
-sizes = [73, 42, 38, 28, 22, 19, 18, 12, 8, 7]           #The number of people who favor certain movie
-plt.pie(sizes, labels=labels)          #draw the pie plot
-plt.show()           #show the plot
+# Create a dictionary containing the information in the table 
+mydict = {"Comedy" : 73, "Action" : 42, "Romance" : 38, "Fantasy" : 28, "Science-fiction" : 22, "Horror" : 19, "Crime" : 18, "Documentary" : 12, "History" : 8, "War" : 7} 
+print (mydict)
+
+# Plot the pie chart with a title and a legend
+labels = list(mydict.keys())
+values = list(mydict.values())
+plt.pie(values, labels=labels) 
+plt.title('Favourite movie genres of university students')        
+plt.legend(loc='best')
+plt.show()          
+
+
+# Create a variable of the requested genre that can be modified
+requested_genre = "Action"
+print(f"The number of university students who prefer {requested_genre} is {mydict[requested_genre]}.")
