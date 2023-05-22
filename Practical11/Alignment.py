@@ -4,6 +4,7 @@ from Bio.SubsMat import MatrixInfo
 
 
 
+
 #read sequence
 seq_file_1 = open('F:/IBI/Practical11/ACE2_mouse.fa', "r")
 seq_file_2 = open('F:/IBI/Practical11/ACE2_cat.fa', "r")
