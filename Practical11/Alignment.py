@@ -85,3 +85,6 @@ elif e>d and e>f:
     print('the sequences of mouse and human are most closely')
 elif f>d and f>e:
     print('the sequences of cat and human are most closely')
+
+
+# cat and human ACE2 proteins have a more recent common ancestor than mouse and human or mouse and cat ACE2 proteins.       A possible implication of this finding is that cats may be more susceptible to SARS-CoV-2 infection than mice, as their ACE2 proteins may bind more efficiently to the spike protein of the virus.
