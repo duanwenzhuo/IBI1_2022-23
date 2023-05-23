@@ -1,11 +1,14 @@
 from xml.dom.minidom import parse 
 import xml.dom.minidom
 import xlsxwriter
+import os
+import pandas as pd
 
 
 
 # read file
-file = open(r"C:\Users\86188\Downloads\go_obo.xml", 'r')
+os.chdir(r"C:\Users\86188\Downloads")
+file = pd.read_xml(go_obo.xml)
 tree = xml.dom.minidom.parse(file)
 root = tree.documentElement
 terms = root.getElementsByTagName('term')
